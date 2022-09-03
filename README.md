@@ -1,18 +1,24 @@
 #
+
 ![logo](src/assets/logo.png)
 
 ## Presentation
+
 SportSee is an application for sportive people that want to follow their daily progress through analytics dashboard.
-
-## Start the project in a terminal
-- git clone https://github.com/fpw2/sportsee.git  
-- `npm i` for install dependencies
-
 
 ## Configuration
 
 [NodeJs](https://nodejs.org/en/)
-  
+[yarn](https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable)
+
+## Start the project 
+
+Open VSC or another code editor then open a terminal in your folder path and type the following commands :
+- `git clone https://github.com/fpw2/sportsee.git`  
+- `npm i` for install dependencies
+
+For launch the back open a new terminal with the following folder path `cd .\backend-dashboard-master\` then type :
+- `yarn dev` 
 
 # Getting Started with Create React App
 
