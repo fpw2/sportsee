@@ -19,7 +19,7 @@ Open VSC or another code editor then open a terminal in your folder path and typ
 
 For launch the <strong>back</strong> open a new terminal with the following folder path `cd .\backend-dashboard-master\` then type `yarn dev` 
 
-# Getting Started with Create React App
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
