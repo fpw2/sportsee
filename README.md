@@ -1,4 +1,4 @@
-## Render
+## 
 ![Alt text](src/assets/logo.png)
 
 ## Presentation
@@ -6,11 +6,13 @@ SportSee is an application for sportive people that want to follow their daily p
 
 ## Start the project
 git clone https://github.com/fpw2/sportsee.git  
+npm i for install dependencies
 
 
 ## Configuration
+
+[NodeJs](https://nodejs.org/en/)
   
-* npm i for install dependencies
 
 # Getting Started with Create React App
 
