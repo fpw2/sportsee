@@ -1,0 +1,61 @@
+@import url("logo.css");
+@import url("navbar.css");
+@import url("sidebar.css");
+@import url("dashboard.css");
+@import url("header.css");
+@import url("calories.css");
+@import url("activities.css");
+@import url("sessions.css");
+@import url("performance.css");
+@import url("score.css");
+
+:root {
+  --primary: #FF0101 ;
+  --white: #FFFFFF;
+  --black: #000000;
+  --bg: #FBFBFB;
+  --bg_performance: #282D30;
+}
+
+* {
+  margin: 0px;
+  font-family: 'Roboto'
+}
+
+.container {
+  display: flex; 
+  flex-direction: column; 
+  margin: 0px auto;
+  max-width: 1024px;
+  height: 100%;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 0px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 14px;
+  margin: 0px;
+}
+
+ul {
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+.block-sidebar-dashboard {
+  display: flex;
+}

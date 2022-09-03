@@ -1,0 +1,115 @@
+.dashboard {
+    width: 100%;
+    margin: 20px 0px 20px 100px;
+}
+
+.header {
+    margin-top: 70px;
+}
+
+.result {
+    display: flex;
+    width: 100%;
+    height: 613px;
+    margin-top: 80px;
+}
+
+/* GRAPH */
+.container-graph {
+    width: 835px;
+}
+
+.graph-activities {
+    position: relative;
+    width: 100%;
+    border-radius: 5px;
+    background-color: var(--bg);
+    margin-bottom: 30px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+}
+
+.graph-sessions, .graph-performance, .graph-score {
+    border-radius: 5px;
+    height: 263px;
+    width: 258px;
+
+}
+
+.graph-sessions {
+    position: relative;
+    background-color: var(--primary);
+}
+
+.graph-performance {
+    background-color: var(--bg_performance);
+}
+
+.graph-score {
+    position: relative;
+    background-color: var(--bg);
+
+}
+
+/* TITRE GRAPH */
+.graph-activities-title, .graph-sessions-title, .graph-score-title {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+.graph-activities-title {
+    color: #20253A;
+}
+
+.graph-sessions-title {
+    opacity: 50%;
+    color: var(--white);
+    word-wrap: break-word;
+    width: 120px;
+}
+
+.graph-score-title {
+    color: #20253A;
+}
+
+@media screen and (max-width: 1024px) {
+    .dashboard {
+        margin: 0px 20px;
+    }
+
+    .header {
+        margin-top: 20px;
+    }
+    .container-graph {
+        width: 620px;
+    }
+
+    .graph-sessions, .graph-performance, .graph-score {
+        height: 200px;
+        width: 200px;
+    }    
+
+    .graph-activities-title, .graph-sessions-title, .graph-score-title {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    
+    .calories {
+        margin-left: 20px !important
+    }
+
+    .calories > div {
+        margin-bottom: 20px !important
+    }
+
+    .grid {
+        grid-gap: 10px;
+    }
+
+}
+

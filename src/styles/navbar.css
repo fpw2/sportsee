@@ -1,0 +1,21 @@
+.navbar-header {
+    display: flex;
+    background-color: var(--black);
+    align-items: center;
+    color: var(--white);
+    height: 91px;
+}
+
+.navbar {
+    width: 100%;
+}
+.navbar>ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+
+
+

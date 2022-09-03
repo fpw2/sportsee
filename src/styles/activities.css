@@ -1,0 +1,16 @@
+.tooltip-activity{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #E60000;
+    width: 65px;
+    height: 100px;
+}
+
+.tooltip-activity h4 {
+    justify-content: space-around;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: lighter;
+}
+

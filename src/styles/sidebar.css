@@ -1,0 +1,22 @@
+.sidebar {
+    background-color: var(--black);
+    width: 117px;
+    height: 100vh;   
+}
+
+.sidebar ul {
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 60%;
+    gap: 20px;
+}
+
+.copiryght {
+    color: var(--white);
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    margin: 0 auto;
+    height: 30%;
+}

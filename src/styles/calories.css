@@ -1,0 +1,34 @@
+.calories {
+    width: 200px;
+    margin-left: 40px;
+}
+
+.calories img {
+    display: flex;
+    gap: 20px;
+}
+
+/* block calories */
+.calories > div {
+    background-color: var(--bg);
+    height: 63px;
+    width: 158px;
+    display: flex;
+    margin-bottom: 40px;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.calories > div:nth-child(4) {
+    margin-bottom: 0px;
+}
+
+/* block number/type */ 
+.calories > div > div {
+    padding-left: 25px;
+    align-self: center;
+}
+
+.type {
+    color: #74798C;
+}
