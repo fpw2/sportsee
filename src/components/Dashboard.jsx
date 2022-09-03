@@ -18,7 +18,7 @@ import {
   fetchActivity,
   fetchAverageSessions,
   fetchPerformance,
-} from "../service/mockService";
+} from "../service/apiService";
 
 
 /**
