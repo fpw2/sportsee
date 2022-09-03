@@ -1,13 +1,12 @@
-##
+#
 ![logo](src/assets/logo.png)
-##
 
 ## Presentation
 SportSee is an application for sportive people that want to follow their daily progress through analytics dashboard.
 
 ## Start the project in a terminal
 - git clone https://github.com/fpw2/sportsee.git  
-- <strong>npm i</strong> for install dependencies
+- `npm i` for install dependencies
 
 
 ## Configuration
