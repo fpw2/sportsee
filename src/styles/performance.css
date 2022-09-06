@@ -1,6 +1,5 @@
 @media screen and (max-width: 1024px) {
-    .graph-performance {
-        padding: 0px;
+    RadarChart {
         box-sizing: border-box;
     }
 }

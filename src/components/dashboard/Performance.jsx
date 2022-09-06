@@ -19,15 +19,16 @@ export default function Performance({ performance }) {
         <RadarChart
           seg={2}
           outerRadius={60}
+          innerRadius={-5}
           data={performance}
           fill="var(--white)"
         >
           {/* radialLines: trait qui vont au centre */}
-          <PolarGrid radialLines={false} margin={{top:50}}/>
+          <PolarGrid radialLines={false} />
           {/* dy: positionnement par rapport au centre */}
-          <PolarAngleAxis dataKey="kind"  dy={5} tick={{fontSize:12, padding:-40}} />
+          <PolarAngleAxis dataKey="kind" dy={4} tick={{fontSize:12}} />
           {/* tickCount: nombre octogone */}
-          <PolarRadiusAxis tick={false} tickCount={6} axisLine={false} />
+          <PolarRadiusAxis tick={false} tickCount={5} axisLine={false} cy={5} />
           <Radar
             dataKey="value"
             fill="var(--primary)"
