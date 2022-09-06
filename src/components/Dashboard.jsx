@@ -12,7 +12,7 @@ import {
   fetchActivity,
   fetchAverageSessions,
   fetchPerformance,
-} from "../service/mockService";
+} from "../service/mockService"; // for use back change into ../service/apiService
 
 
 /**
@@ -21,7 +21,6 @@ import {
  */
 export default function Dashboard() {
 
-  // USING BACK
   const [firstName, setFirstname] = useState();
   const [score, setScore] = useState();
   const [calories, setCalories] = useState();
@@ -32,6 +31,7 @@ export default function Dashboard() {
   const [sessions, setSessions] = useState({});
   const [performance, setPerformance] = useState({});
 
+  // example with the user 12
   useEffect(() => {
     fetchUser(12).then((data) => {
       const { firstName, score, calories, protein, carbs, fat } = data;
