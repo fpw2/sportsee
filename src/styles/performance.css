@@ -1,4 +1,6 @@
-.graph-performance {
-    padding: 5px;
-    box-sizing: border-box;
+@media screen and (max-width: 1024px) {
+    .graph-performance {
+        padding: 0px;
+        box-sizing: border-box;
+    }
 }

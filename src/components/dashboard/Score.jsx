@@ -30,5 +30,5 @@ export default function Score({score}) {
 }
 
 Score.propTypes = {
-  score: PropTypes.number.isRequired
+  score: PropTypes.number
 }

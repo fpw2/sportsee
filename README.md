@@ -1,6 +1,6 @@
 #
 
-![logo](src/assets/logo.png)
+![logo](src/assets/SportSee.png)
 
 ## Presentation
 

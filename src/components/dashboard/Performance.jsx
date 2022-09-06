@@ -13,22 +13,19 @@ import {
  * @returns RadarChart
  */
 export default function Performance({ performance }) {
-  console.log(performance)
   return (
     <div className="graph-performance">
       <ResponsiveContainer width="100%" height="100%">
         <RadarChart
           seg={2}
-          outerRadius={80}
-          width={380}
-          height={383}
+          outerRadius={60}
           data={performance}
           fill="var(--white)"
         >
           {/* radialLines: trait qui vont au centre */}
-          <PolarGrid radialLines={false} />
+          <PolarGrid radialLines={false} margin={{top:50}}/>
           {/* dy: positionnement par rapport au centre */}
-          <PolarAngleAxis dataKey="kind" dy={5} />
+          <PolarAngleAxis dataKey="kind"  dy={5} tick={{fontSize:12, padding:-40}} />
           {/* tickCount: nombre octogone */}
           <PolarRadiusAxis tick={false} tickCount={6} axisLine={false} />
           <Radar
@@ -42,3 +39,5 @@ export default function Performance({ performance }) {
     </div>
   );
 }
+
+

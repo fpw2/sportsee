@@ -4,12 +4,18 @@
  * @returns object
  */
 export default function userPerformance(user) {
+    const abilities = ["Cardio", "Energie", "Endurance", "Force", "Vitesse", "Intensité"]
     const data = user.data.map(data => {
+        console.log(data.kind)
         return {
             value: data.value,
-            kind: user.kind[data.kind],
+            kind: abilities[data.kind - 1],
+            // kind: user.kind[data.kind],
         }
     })
-
+    console.log(data)
+    
+    
+    // reverse() : inverse l'ordre des données
     return data.reverse()
 }
