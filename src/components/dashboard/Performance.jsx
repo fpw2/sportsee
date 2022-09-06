@@ -17,8 +17,8 @@ export default function Performance({ performance }) {
     <div className="graph-performance">
       <ResponsiveContainer width="100%" height="100%">
         <RadarChart
-          seg={2}
-          outerRadius={60}
+          margin={{ top: 20, right: 20, bottom: 20, left: 20 }}
+          padding={{ top: 20, right: 20, bottom: 20, left: 20 }}
           innerRadius={-5}
           data={performance}
           fill="var(--white)"
