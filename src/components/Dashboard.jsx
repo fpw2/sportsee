@@ -6,19 +6,13 @@ import Performance from "./dashboard/Performance";
 import Score from "./dashboard/Score";
 import Calories from "./dashboard/Calories";
 import { icon } from "../data/icon";
-import Loader from "./Loader";
-// import {
-//   getUser,
-//   getUserActivity,
-//   getUserAverageSessions,
-//   getUserPerformance,
-// } from "../service/mockService";
+
 import {
   fetchUser,
   fetchActivity,
   fetchAverageSessions,
   fetchPerformance,
-} from "../service/apiService";
+} from "../service/mockService";
 
 
 /**
