@@ -14,7 +14,6 @@ import {
  * @returns LineChart
  */
 export default function Sessions({ sessions }) {
-  console.log(sessions)
   /**
    * Custom the tooltip
    * @param {boolean} active

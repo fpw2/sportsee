@@ -12,7 +12,7 @@ import {
   fetchActivity,
   fetchAverageSessions,
   fetchPerformance,
-} from "../service/mockService"; // for use back change into ../service/apiService
+} from "../service/apiService"; // for use back change into ../service/apiService
 
 /**
  * Display the dashboard with all graph and cards
