@@ -1,0 +1,14 @@
+.error {
+    height: 800px;
+    color: var(--primary);
+    text-align: center;
+    line-height: 500px;
+    margin: 0 auto;
+}
+
+
+.error-title {
+    font-size: 288px;
+}
+
+

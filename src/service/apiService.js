@@ -9,11 +9,17 @@ import userPerformance from "../functions/userPerformance"
  * @returns object
  */
 const fetchUser = async (userId) => {
-    const response = await fetch(`http://localhost:3000/user/${userId}`)
-    const data = await response.json()
-    const user = data.data
+    try {
+        const response = await fetch(`http://localhost:3000/user/${userId}`)
+        const data = await response.json()
+        const user = data.data
+        
+        return userData(user)
+    }
+    catch (error){
+        throw error
+    }
 
-    return userData(user)
 }
 
 /**

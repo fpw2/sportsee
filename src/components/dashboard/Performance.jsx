@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 import {
   ResponsiveContainer,
   RadarChart,
@@ -40,4 +42,9 @@ export default function Performance({ performance }) {
   );
 }
 
-
+Performance.propTypes = {
+  performance: PropTypes.arrayOf(PropTypes.shape({
+    value: PropTypes.number,
+    kind: PropTypes.string,
+  }))
+}

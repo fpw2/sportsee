@@ -9,10 +9,12 @@
 .navbar {
     width: 100%;
 }
+
 .navbar>ul {
     display: flex;
     justify-content: space-around;
     width: 100%;
+    font-size: 24px;
 }
 
 

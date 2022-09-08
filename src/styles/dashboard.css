@@ -3,10 +3,6 @@
     margin: 20px 0px 20px 100px;
 }
 
-.header {
-    margin-top: 70px;
-}
-
 .result {
     display: flex;
     width: 100%;
@@ -76,14 +72,15 @@
     color: #20253A;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1300px) {
     .dashboard {
         margin: 0px 20px;
     }
 
     .header {
-        margin-top: 20px;
+        margin-top: 10px !important;
     }
+   
     .container-graph {
         width: 620px;
     }

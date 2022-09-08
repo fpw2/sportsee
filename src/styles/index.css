@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url("logo.css");
 @import url("navbar.css");
 @import url("sidebar.css");
@@ -8,6 +9,7 @@
 @import url("sessions.css");
 @import url("performance.css");
 @import url("score.css");
+@import url("error.css");
 
 :root {
   --primary: #FF0101 ;
@@ -26,7 +28,7 @@
   display: flex; 
   flex-direction: column; 
   margin: 0px auto;
-  max-width: 1024px;
+  max-width: 1440px;
   height: 100%;
 }
 

@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import {
   ResponsiveContainer,
   BarChart,
@@ -15,7 +16,6 @@ import {
  * @returns BarChart
  */
 export default function Activities({ activity }) {
-
   /**
    * Custop the tooltip
    * @param {boolean} active
@@ -65,6 +65,7 @@ export default function Activities({ activity }) {
             tickLine={false}
             padding={{ left: -25, right: -25 }}
             tickMargin={16}
+            tick={{fontSize:14}}
           />
           <YAxis
             orientation="right"
@@ -72,6 +73,7 @@ export default function Activities({ activity }) {
             axisLine={false}
             tickMargin={45}
             minTickGap={27}
+            tick={{fontSize:14}}
           />
           {/* cursor: quand on passe la souris sur une donnée */}
           <Tooltip content={customTooltip} cursor={{opacity:0.6}} />
@@ -91,4 +93,12 @@ export default function Activities({ activity }) {
       </ResponsiveContainer>
     </div>
   );
+}
+
+Activities.propTypes = {
+  activity: PropTypes.arrayOf(PropTypes.shape({
+    day: PropTypes.number,
+    kilogram: PropTypes.number,
+    calories: PropTypes.number
+  }))
 }

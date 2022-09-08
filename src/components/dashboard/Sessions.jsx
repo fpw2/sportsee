@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import {
   ResponsiveContainer,
   LineChart,
@@ -13,8 +14,7 @@ import {
  * @returns LineChart
  */
 export default function Sessions({ sessions }) {
-
-
+  console.log(sessions)
   /**
    * Custom the tooltip
    * @param {boolean} active
@@ -59,9 +59,10 @@ export default function Sessions({ sessions }) {
             dataKey="day"
             tickLine={false}
             axisLine={false}
-            padding={{left: 15, right: 15}}
+            padding={{left: 8, right: 8}}
             stroke="#ffffff"
             opacity={0.5}
+            tick={{fontSize:12}}
           />
           {/* <YAxis axisLine={false} tickLine={false} tick={false} domain={['dataMin - 5', 'dataMax + 5']}/> */}
           <Tooltip content={<CustomTooltip />} cursor={<CustomCursor />} />
@@ -78,4 +79,11 @@ export default function Sessions({ sessions }) {
       </ResponsiveContainer>
     </div>
   );
+}
+
+Sessions.propTypes = {
+  sessions: PropTypes.arrayOf(PropTypes.shape({
+    day: PropTypes.string,
+    sessionLength: PropTypes.number,
+  }))
 }
