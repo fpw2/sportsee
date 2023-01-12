@@ -67,14 +67,3 @@ export {fetchUser, fetchActivity, fetchAverageSessions, fetchPerformance}
 
 
 
-// function getUserDatas(userId, endpoint) {
-//     useEffect(() => {
-
-//     })
-//     fetch(`http://localhost:3000/user/${userId}/${endpoint}`)
-//     .then(response => response.json())
-//     .then(data => {
-//         console.log(data)
-//     })  
-// }
-

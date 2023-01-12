@@ -6,13 +6,14 @@ import Score from "./dashboard/Score";
 import Calories from "./dashboard/Calories";
 import { icon } from "../data/icon";
 import { useState, useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import {
   fetchUser,
   fetchActivity,
   fetchAverageSessions,
   fetchPerformance,
-} from "../service/apiService"; // for use back change into ../service/apiService
+} from "../service/mockService"; // for use back ../service/apiService
+                                // for use mock ../service/mockService
 
 /**
  * Display the dashboard with all graph and cards

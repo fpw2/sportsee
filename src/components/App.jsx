@@ -11,6 +11,7 @@ export default function App() {
     return (
       <BrowserRouter>
         <Routes>
+          <Route path="/" element={<Profile />} />
           <Route path="/user/:userId" element={<Profile />} />
           <Route path="*" element={<Error />} /> 
         </Routes>
